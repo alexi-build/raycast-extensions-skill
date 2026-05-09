@@ -7,6 +7,11 @@ description: Build and maintain Raycast extensions using the Raycast API. Trigge
 
 Build powerful extensions with React, TypeScript, and the Raycast API.
 
+## Repository Conventions
+
+- When updating `CHANGELOG.md` for the Raycast extensions repository, always use `{PR_MERGE_DATE}` as the date placeholder.
+- Never write a literal calendar date in `CHANGELOG.md`.
+
 ## Quick Start (Agent Workflow)
 
 Follow these steps when tasked with implementing or fixing Raycast features:
@@ -17,6 +22,7 @@ Follow these steps when tasked with implementing or fixing Raycast features:
     - **Feedback**: Use `showToast` for Loading/Success/Failure. Use `showHUD` only for quick background completions.
     - **Data**: Use `Cache` for frequent/transient data, `LocalStorage` for persistent user data.
     - **Access**: Always check `environment.canAccess(AI)` or `environment.canAccess(BrowserExtension)` before use.
+    - **Changelog**: When updating `CHANGELOG.md` for the Raycast extensions repository, always use `{PR_MERGE_DATE}` as the date placeholder. Never write a literal calendar date.
 4. **Implementation**: Provide a concise implementation using `@raycast/api` components.
 5. **Citing**: Link back to the specific `references/api/*.md` file you used.
 
